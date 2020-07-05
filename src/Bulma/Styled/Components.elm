@@ -1,6 +1,7 @@
 module Bulma.Styled.Components exposing
     ( IsActive
-    , Breadcrumb, BreadcrumbModifiers, BreadcrumbSeparator, breadcrumbModifiers
+    , Breadcrumb, slash, arrow, bullet, dot, succeeds
+    , BreadcrumbModifiers, BreadcrumbSeparator, breadcrumbModifiers
     , breadcrumb
     , Crumblet
     , crumblet
@@ -77,11 +78,11 @@ module Bulma.Styled.Components exposing
     , panelTabs
     , PanelTab
     , panelTab
-    , Tabs, TabsModifiers, TabsStyle, tabsModifiers
+    , Tabs, TabsModifiers, tabsModifiers
+    , TabsStyle, minimal, boxed, toggle, round
     , tabs
     , Tab
     , tab
-    , arrow, boxed, bullet, dot, minimal, round, slash, succeeds, toggle
     )
 
 {-|
@@ -109,7 +110,8 @@ module Bulma.Styled.Components exposing
 
 # Breadcrumb
 
-@docs Breadcrumb, BreadcrumbModifiers, BreadcrumbSeparator, breadcrumbModifiers
+@docs Breadcrumb, slash, arrow, bullet, dot, succeeds
+@docs BreadcrumbModifiers, BreadcrumbSeparator, breadcrumbModifiers
 @docs breadcrumb
 
 
@@ -322,7 +324,8 @@ module Bulma.Styled.Components exposing
 
 # Tabs
 
-@docs Tabs, TabsModifiers, TabsStyle, tabsModifiers
+@docs Tabs, TabsModifiers, tabsModifiers
+@docs TabsStyle, minimal, boxed, toggle, round
 @docs tabs
 
 
@@ -339,8 +342,7 @@ module Bulma.Styled.Components exposing
 import Bulma.Styled.Classes as B
 import Bulma.Styled.Elements exposing (Button, Icon, IconBody, Image, easyDelete)
 import Bulma.Styled.Helpers exposing (..)
-import Bulma.Styled.Modifiers as M
-import Bulma.Styled.Modifiers.Internal as Internal exposing (..)
+import Bulma.Styled.Modifiers.Internal exposing (..)
 import Html.Styled exposing (Attribute, Html, a, div, input, li, p, span, text, ul)
 import Html.Styled.Attributes exposing (attribute, class, type_)
 import Html.Styled.Events exposing (onClick)
@@ -385,7 +387,7 @@ bullet =
 {-| -}
 dot : BreadcrumbSeparator
 dot =
-    Arrow
+    Dot
 
 
 {-| -}

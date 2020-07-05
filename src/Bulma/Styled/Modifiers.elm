@@ -1,6 +1,6 @@
 module Bulma.Styled.Modifiers exposing
     ( Size, small, standard, medium, large
-    , Width, width2, width3, width4, width5, width6, width7, width8, width9, width10, width11
+    , Width, auto, width1, width2, width3, width4, width5, width6, width7, width8, width9, width10, width11
     , State, blur, hover, focus, active, loading
     , IsActive
     , Color, default, white, light, dark, black, primary, link, info, success, warning, danger
@@ -15,9 +15,8 @@ module Bulma.Styled.Modifiers exposing
     , unselectable
     , clipped
     , radiusless, shadowless, invisible, screenReaderOnly
-    , Devices, Display, block, flex, hidden, inline, inlineFlex
+    , Devices, Display, block, flex, hidden, inline, inlineBlock, inlineFlex
     , display, displayByDevice
-    , auto, inlineBlock, width1
     )
 
 {-| Most Bulma elements have alternative styles.
@@ -40,7 +39,7 @@ Also included are a set of helpers for style, layout.
 ## Size
 
 @docs Size, small, standard, medium, large
-@docs Width, auto width1, width2, width3, width4, width5, width6, width7, width8, width9, width10, width11
+@docs Width, auto, width1, width2, width3, width4, width5, width6, width7, width8, width9, width10, width11
 
 
 ## State
@@ -112,7 +111,7 @@ Also included are a set of helpers for style, layout.
 
 ## Display
 
-@docs Devices, Display, block, flex, hidden, inline, inelineBlock, inlineFlex
+@docs Devices, Display, block, flex, hidden, inline, inlineBlock, inlineFlex
 @docs display, displayByDevice
 
 
@@ -131,6 +130,7 @@ import Html.Styled.Attributes exposing (class)
 import String exposing (join)
 
 
+{-| -}
 type alias Color =
     Internal.Color
 
@@ -201,10 +201,12 @@ danger =
     Internal.Danger
 
 
+{-| -}
 type alias Devices a =
     Internal.Devices a
 
 
+{-| -}
 type alias Display =
     Internal.Display
 
@@ -245,6 +247,7 @@ inlineFlex =
     Internal.InlineFlex
 
 
+{-| -}
 type alias HorizontalAlignment =
     Internal.HorizontalAlignment
 
@@ -267,10 +270,12 @@ right =
     Internal.Right
 
 
+{-| -}
 type alias IsActive =
     Internal.IsActive
 
 
+{-| -}
 type alias Size =
     Internal.Size
 
@@ -299,6 +304,7 @@ large =
     Internal.Large
 
 
+{-| -}
 type alias State =
     Internal.State
 
@@ -333,6 +339,7 @@ loading =
     Internal.Loading
 
 
+{-| -}
 type alias VerticalAlignment =
     Internal.VerticalAlignment
 
@@ -343,6 +350,7 @@ top =
     Internal.Top
 
 
+{-| -}
 verticallyCentered : VerticalAlignment
 verticallyCentered =
     Internal.VerticallyCentered
@@ -354,6 +362,7 @@ bottom =
     Internal.Bottom
 
 
+{-| -}
 type alias VerticalDirection =
     Internal.VerticalDirection
 
@@ -370,6 +379,7 @@ down =
     Internal.Down
 
 
+{-| -}
 type alias Width =
     Internal.Width
 

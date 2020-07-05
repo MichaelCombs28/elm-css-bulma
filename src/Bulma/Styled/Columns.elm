@@ -1,9 +1,11 @@
 module Bulma.Styled.Columns exposing
-    ( ColumnsModifiers, Display, Gap, columnsModifiers
+    ( ColumnsModifiers
+    , Display, mobile, tablet, desktop
+    , Gap, gap0, gap1, gap2, gap3, gap4, gap5, gap6, gap7, gap8
+    , columnsModifiers
     , columns
     , Column, ColumnModifiers, Offset, columnModifiers, narrowColumnModifiers
     , column
-    , desktop, gap0, gap1, gap2, gap3, gap4, gap5, gap6, gap7, gap8, mobile, tablet
     )
 
 {-| A simple way to build responsive grids.
@@ -31,7 +33,10 @@ Learn more about columnar grids in the [official docs](http://bulma.io/documenta
                 ]
             ]
 
-@docs ColumnsModifiers, Display, Gap, columnsModifiers
+@docs ColumnsModifiers
+@docs Display, mobile, tablet, desktop
+@docs Gap, gap0, gap1, gap2, gap3, gap4, gap5, gap6, gap7, gap8
+@docs columnsModifiers
 @docs columns
 
 
@@ -46,7 +51,7 @@ import Bulma.Styled.Classes as B
 import Bulma.Styled.Helpers exposing (..)
 import Bulma.Styled.Modifiers as M
 import Bulma.Styled.Modifiers.Internal as Internal
-import Html.Styled exposing (Attribute, Html, a, div, text)
+import Html.Styled exposing (Attribute, Html)
 
 
 
@@ -150,46 +155,55 @@ type Gap
     | Gap8
 
 
+{-| -}
 gap0 : Gap
 gap0 =
     Gap0
 
 
+{-| -}
 gap1 : Gap
 gap1 =
     Gap1
 
 
+{-| -}
 gap2 : Gap
 gap2 =
     Gap2
 
 
+{-| -}
 gap3 : Gap
 gap3 =
     Gap3
 
 
+{-| -}
 gap4 : Gap
 gap4 =
     Gap4
 
 
+{-| -}
 gap5 : Gap
 gap5 =
     Gap5
 
 
+{-| -}
 gap6 : Gap
 gap6 =
     Gap6
 
 
+{-| -}
 gap7 : Gap
 gap7 =
     Gap7
 
 
+{-| -}
 gap8 : Gap
 gap8 =
     Gap8
@@ -202,16 +216,19 @@ type Display
     | DesktopAndBeyond
 
 
+{-| -}
 mobile : Display
 mobile =
     MobileAndBeyond
 
 
+{-| -}
 tablet : Display
 tablet =
     TabletAndBeyond
 
 
+{-| -}
 desktop : Display
 desktop =
     DesktopAndBeyond

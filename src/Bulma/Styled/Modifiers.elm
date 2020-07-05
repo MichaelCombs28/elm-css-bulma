@@ -1,4 +1,126 @@
-module Bulma.Styled.Modifiers exposing (Color, Devices, Display, HorizontalAlignment, IsActive, Size, State, VerticalAlignment, VerticalDirection, Width, active, auto, black, block, blur, bottom, centered, clearfix, clipped, danger, dark, default, display, displayByDevice, down, flex, focus, fullWidth, hidden, hover, info, inline, inlineBlock, inlineFlex, invisible, large, left, light, link, loading, marginless, medium, overlay, paddingless, primary, pulledLeft, pulledRight, radiusless, right, screenReaderOnly, shadowless, small, standard, success, top, unselectable, up, verticallyCentered, warning, white, width1, width10, width11, width2, width3, width4, width5, width6, width7, width8, width9)
+module Bulma.Styled.Modifiers exposing
+    ( Size, small, standard, medium, large
+    , Width, width2, width3, width4, width5, width6, width7, width8, width9, width10, width11
+    , State, blur, hover, focus, active, loading
+    , IsActive
+    , Color, default, white, light, dark, black, primary, link, info, success, warning, danger
+    , HorizontalAlignment, left, centered, right
+    , VerticalAlignment, top, bottom, verticallyCentered
+    , VerticalDirection, up, down
+    , clearfix
+    , pulledLeft, pulledRight
+    , overlay
+    , fullWidth
+    , marginless, paddingless
+    , unselectable
+    , clipped
+    , radiusless, shadowless, invisible, screenReaderOnly
+    , Devices, Display, block, flex, hidden, inline, inlineFlex
+    , display, displayByDevice
+    , auto, inlineBlock, width1
+    )
+
+{-| Most Bulma elements have alternative styles.
+These types will come in handy for various modifiers records throughout this library.
+Also included are a set of helpers for style, layout.
+
+
+# Table of Contents
+
+  - [Global Union Types](#types)
+  - [Global Attributes](#attributes)
+      - [General Helpers](#general)
+      - [Display Helpers](#display)
+      - [Typography Helpers](#typography)
+
+
+# Types
+
+
+## Size
+
+@docs Size, small, standard, medium, large
+@docs Width, auto width1, width2, width3, width4, width5, width6, width7, width8, width9, width10, width11
+
+
+## State
+
+@docs State, blur, hover, focus, active, loading
+@docs IsActive
+
+
+## Color
+
+@docs Color, default, white, light, dark, black, primary, link, info, success, warning, danger
+
+
+## Alignment
+
+@docs HorizontalAlignment, left, centered, right
+@docs VerticalAlignment, top, bottom, verticallyCentered
+
+
+## Direction
+
+@docs VerticalDirection, up, down
+
+
+# Attributes
+
+
+## General
+
+
+### Float
+
+@docs clearfix
+@docs pulledLeft, pulledRight
+
+
+### Overlay
+
+@docs overlay
+
+
+### Size
+
+
+### Sizing
+
+@docs fullWidth
+
+
+### Spacing
+
+@docs marginless, paddingless
+
+
+### Selectability
+
+@docs unselectable
+
+
+### Overflow
+
+@docs clipped
+
+
+### Style
+
+@docs radiusless, shadowless, invisible, screenReaderOnly
+
+
+## Display
+
+@docs Devices, Display, block, flex, hidden, inline, inelineBlock, inlineFlex
+@docs display, displayByDevice
+
+
+### Typography
+
+See [Bulma.Modifiiers.Typography](http://package.elm-lang.org/packages/surprisetalk/elm-bulma/latest/Bulma-Modifiers-Typography).
+
+-}
 
 -- IMPORTS ---------------------------------------------------------------------
 
